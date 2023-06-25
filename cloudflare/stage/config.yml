@@ -1,0 +1,12 @@
+tunnel: 67d8c330-a7b1-41bb-b6d3-cbba6aeeab7c
+credentials-file: /home/nonroot/.cloudflared/67d8c330-a7b1-41bb-b6d3-cbba6aeeab7c.json
+protocol: http2
+
+ingress:
+  - hostname: monitoring-server-app.nutfes.net
+    service: http://localhost:9004
+    #- hostname: service-2.stg.nutfes.net
+    #service: http://service-2:8000
+    #- hostname: service-3.stg.nutfes.net
+    #service: http://service-3:3000
+    #- service: http_status:404
